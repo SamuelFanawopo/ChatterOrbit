@@ -22,6 +22,7 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
+    "@heroicons/react": "^2.1.1",
     "firebase": "^10.7.1"
   }
 }

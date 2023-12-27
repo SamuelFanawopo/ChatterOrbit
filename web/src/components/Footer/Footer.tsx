@@ -1,9 +1,10 @@
 const Footer = () => {
   return (
-    <div>
-      <h2>{'Footer'}</h2>
-      <p>{'Find me in ./web/src/components/Footer/Footer.tsx'}</p>
-    </div>
+    <footer className="flex flex-col">
+      <p className="mt-5 mb-4 flex justify-center">
+        ChatterOrbit © {new Date().getFullYear()} - All Rights Reserved
+      </p>
+    </footer>
   )
 }
 
