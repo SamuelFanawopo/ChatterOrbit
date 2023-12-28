@@ -1,14 +1,14 @@
 import { render } from '@redwoodjs/testing/web'
 
-import LoginPage from './LoginPage'
+import HeroSection from './HeroSection'
 
 //   Improve this test with help from the Redwood Testing Doc:
-//   https://redwoodjs.com/docs/testing#testing-pages-layouts
+//    https://redwoodjs.com/docs/testing#testing-components
 
-describe('LoginPage', () => {
+describe('HeroSection', () => {
   it('renders successfully', () => {
     expect(() => {
-      render(<LoginPage />)
+      render(<HeroSection />)
     }).not.toThrow()
   })
 })

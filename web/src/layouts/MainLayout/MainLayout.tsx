@@ -1,5 +1,5 @@
-import Header from '../../components/Header/Header'
-import Footer from '../../components/Footer/Footer'
+import Header from 'src/components/layout/Header/Header'
+import Footer from 'src/components/layout/Footer/Footer'
 
 type MainLayoutProps = {
   children?: React.ReactNode

@@ -1,7 +1,8 @@
 import { Router, Route } from '@redwoodjs/router'
 import MainLayout from './layouts/MainLayout/MainLayout'
 import HomePage from './pages/HomePage/HomePage'
-import LoginPage from './pages/LoginPage/LoginPage'
+import MessagePage from './pages/MessagePage/MessagePage'
+import InfoPage from './pages/InfoPage/InfoPage'
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 import PostDetailsPage from './pages/PostDetailsPage/PostDetailsPage'
 import ProfilePage from './pages/ProfilePage/ProfilePage'
@@ -13,8 +14,12 @@ import FeedPage from './pages/FeedPage/FeedPage'
 const Routes = () => {
   return (
     <Router>
+      <MainLayout>
+        <Route path="/message" page={MessagePage} name="message" />
+      </MainLayout>
+      <Route path="/" page={InfoPage} name="info" />
       <Route
-        path="/"
+        path="/home"
         page={() => (
           <MainLayout>
             <HomePage />
