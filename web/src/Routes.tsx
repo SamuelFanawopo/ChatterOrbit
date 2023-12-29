@@ -17,7 +17,7 @@ const Routes = () => {
       <MainLayout>
         <Route path="/message" page={MessagePage} name="message" />
       </MainLayout>
-      <Route path="/" page={InfoPage} name="info" />
+      <Route path="/" page={InfoPage} name="Welcome" />
       <Route
         path="/home"
         page={() => (
@@ -71,15 +71,6 @@ const Routes = () => {
           </MainLayout>
         )}
         name="profile"
-      />
-      <Route
-        path="/login"
-        page={() => (
-          <MainLayout>
-            <LoginPage />
-          </MainLayout>
-        )}
-        name="login"
       />
       <Route
         path="/register"
