@@ -1,8 +1,10 @@
 import React from 'react'
 
-interface HeroSectionProps {}
+interface HeroSectionProps {
+  onJoinNowClick: () => void
+}
 
-const HeroSection: React.FC<HeroSectionProps> = () => {
+const HeroSection: React.FC<HeroSectionProps> = ({ onJoinNowClick }) => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-teal-400 text-white py-20">
       <div className="text-center animate-fade-in-up max-w-4xl mx-auto space-y-6">
@@ -27,7 +29,10 @@ const HeroSection: React.FC<HeroSectionProps> = () => {
         <h2 className="text-4xl font-bold mt-4 mb-8 animate-pulse">
           Be Part of Our Global Community
         </h2>
-        <button className="mt-10 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+        <button
+          onClick={onJoinNowClick}
+          className="mt-10 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-3 px-6 rounded-full shadow-md transition duration-300 ease-in-out transform hover:scale-105"
+        >
           Join Now
         </button>
       </div>

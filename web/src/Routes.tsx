@@ -10,10 +10,12 @@ import RegisterPage from './pages/RegisterPage/RegisterPage'
 import SearchResultsPage from './pages/SearchResultsPage/SearchResultsPage'
 import SettingsPage from './pages/SettingsPage/SettingsPage'
 import FeedPage from './pages/FeedPage/FeedPage'
+import ForgotPasswordPage from './pages/ForgotPasswordPage/ForgotPasswordPage'
 
 const Routes = () => {
   return (
     <Router>
+      <Route path="/reset" page={ForgotPasswordPage} name="forgotPassword" />
       <MainLayout>
         <Route path="/message" page={MessagePage} name="message" />
       </MainLayout>
