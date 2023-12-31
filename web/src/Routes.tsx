@@ -74,15 +74,7 @@ const Routes = () => {
         )}
         name="profile"
       />
-      <Route
-        path="/register"
-        page={() => (
-          <MainLayout>
-            <RegisterPage />
-          </MainLayout>
-        )}
-        name="register"
-      />
+      <Route path="/register" page={() => <RegisterPage />} name="register" />
       <Route notfound page={NotFoundPage} />
     </Router>
   )
