@@ -1,20 +1,13 @@
-import { Link, routes } from '@redwoodjs/router'
 import { Metadata } from '@redwoodjs/web'
+import PasswordResetForm from 'src/components/auth/PasswordResetForm/PasswordResetForm'
+import Footer from 'src/components/layout/Footer/Footer'
 
 const ForgotPasswordPage = () => {
   return (
     <>
       <Metadata title="ForgotPassword" description="ForgotPassword page" />
-
-      <h1>ForgotPasswordPage</h1>
-      <p>
-        Find me in{' '}
-        <code>./web/src/pages/ForgotPasswordPage/ForgotPasswordPage.tsx</code>
-      </p>
-      <p>
-        My default route is named <code>forgotPassword</code>, link to me with `
-        <Link to={routes.forgotPassword()}>ForgotPassword</Link>`
-      </p>
+      <PasswordResetForm />
+      <Footer />
     </>
   )
 }
