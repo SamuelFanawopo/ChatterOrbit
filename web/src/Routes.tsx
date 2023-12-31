@@ -11,10 +11,12 @@ import SearchResultsPage from './pages/SearchResultsPage/SearchResultsPage'
 import SettingsPage from './pages/SettingsPage/SettingsPage'
 import FeedPage from './pages/FeedPage/FeedPage'
 import ForgotPasswordPage from './pages/ForgotPasswordPage/ForgotPasswordPage'
+import EmailVerificationPage from './pages/EmailVerificationPage/EmailVerificationPage'
 
 const Routes = () => {
   return (
     <Router>
+      <Route path="/verify" page={EmailVerificationPage} name="emailVerification" />
       <Route path="/reset" page={ForgotPasswordPage} name="forgotPassword" />
       <MainLayout>
         <Route path="/message" page={MessagePage} name="message" />

@@ -10,16 +10,15 @@ const Header = () => {
   const defaultProfilePic = '../../assets/profile_icon.jpg' // Path to your default avatar image
 
   return (
-    <header className="bg-white text-gray-800 shadow-md py-4">
+    <header className="bg-gradient-to-r from-blue-100 via-pink-100 to-green-100 text-gray-800 shadow-md py-4">
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link to="/" className="text-2xl font-bold text-blue-500">
+        <Link to="/" className="text-3xl font-bold text-blue-600">
           ChatterOrbit
         </Link>
         <SearchBar />
         <div className="flex items-center space-x-4">
           <div className="relative">
             <BellIcon className="h-6 w-6 cursor-pointer hover:text-blue-500" />
-            {/* Add a badge for new notifications */}
             <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
               3
             </span>
@@ -35,7 +34,7 @@ const Header = () => {
                 alt="Profile"
                 className="w-10 h-10 rounded-full border-2 border-blue-500 object-cover"
               />
-              <span className="ml-2 mr-1">{userName}</span>
+              <span className="ml-2 mr-1 text-md">{userName}</span>
               <ChevronDownIcon className="w-4 h-4" />
             </button>
             {showDropdown && (
