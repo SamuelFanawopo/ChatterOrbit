@@ -1,4 +1,3 @@
-import { Link } from '@redwoodjs/router'
 import { Metadata } from '@redwoodjs/web'
 import Feed from 'src/components/feed/Feed/Feed'
 
