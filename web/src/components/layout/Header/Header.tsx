@@ -10,7 +10,7 @@ const Header = () => {
   const defaultProfilePic = '../../assets/profile_icon.jpg' // Path to your default avatar image
 
   return (
-    <header className="bg-gradient-to-r from-blue-100 via-pink-100 to-green-100 text-gray-800 shadow-md py-4">
+    <header className="bg-white text-gray-800 shadow-md py-4 rounded-b-lg">
       <div className="container mx-auto flex justify-between items-center px-4">
         <Link to="/" className="text-3xl font-bold text-blue-600">
           ChatterOrbit
@@ -18,7 +18,7 @@ const Header = () => {
         <SearchBar />
         <div className="flex items-center space-x-4">
           <div className="relative">
-            <BellIcon className="h-6 w-6 cursor-pointer hover:text-blue-500" />
+            <BellIcon className="h-6 w-6 cursor-pointer text-gray-600 hover:text-blue-500 transition duration-150 ease-in-out" />
             <span className="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">
               3
             </span>
@@ -34,8 +34,10 @@ const Header = () => {
                 alt="Profile"
                 className="w-10 h-10 rounded-full border-2 border-blue-500 object-cover"
               />
-              <span className="ml-2 mr-1 text-md">{userName}</span>
-              <ChevronDownIcon className="w-4 h-4" />
+              <span className="ml-2 mr-1 text-md text-gray-700">
+                {userName}
+              </span>
+              <ChevronDownIcon className="w-4 h-4 text-gray-600" />
             </button>
             {showDropdown && (
               <div className="absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl text-gray-800 z-50 transition duration-300 ease-in-out">
@@ -53,7 +55,7 @@ const Header = () => {
                 </Link>
                 <Link
                   to="/logout"
-                  className="block px-3 py-2 hover:bg-gray-100"
+                  className="block px-4 py-2 hover:bg-gray-100"
                 >
                   Logout
                 </Link>
