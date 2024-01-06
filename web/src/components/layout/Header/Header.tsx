@@ -10,7 +10,7 @@ const Header = () => {
   const defaultProfilePic = '../../assets/profile_icon.jpg' // Path to your default avatar image
 
   return (
-    <header className="bg-white text-gray-800 shadow-md py-4 rounded-b-lg">
+    <header className="fixed top-0 left-0 right-0 z-30 bg-white text-gray-800 shadow-md py-4 rounded-b-lg">
       <div className="container mx-auto flex justify-between items-center px-4">
         <Link to="/" className="text-3xl font-bold text-blue-600">
           ChatterOrbit
