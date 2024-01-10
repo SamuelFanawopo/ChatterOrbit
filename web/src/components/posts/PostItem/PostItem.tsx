@@ -22,7 +22,7 @@ const PostItem: React.FC = () => {
   }
 
   return (
-    <div className="bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-2xl max-w-lg mx-auto">
+    <div className="mt-20 bg-white shadow-lg rounded-lg overflow-hidden transition duration-300 ease-in-out hover:shadow-2xl max-w-lg mx-auto">
       {/* User Profile Section */}
       <div className="flex items-center p-4">
         <img
