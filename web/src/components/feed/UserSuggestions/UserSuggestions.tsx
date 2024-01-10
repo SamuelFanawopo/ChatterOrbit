@@ -11,7 +11,7 @@ const UserSuggestions = () => {
   ]
 
   return (
-    <aside className="mt-20 w-65 bg-white shadow-lg rounded-lg p-4 mr-4">
+    <aside className="mt-20 w-65 bg-white shadow-lg rounded-lg p-4 mr-4 fixed">
       <h3 className="text-lg font-semibold text-gray-800 mb-4">
         Who to follow
       </h3>
