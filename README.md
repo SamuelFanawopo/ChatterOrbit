@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to **ChatterOrbit**, a cutting-edge social networking platform where connectivity and real-time interactions take center stage. This project is designed as a showcase of modern full-stack development using RedwoodJS, a powerful framework that integrates key technologies to create scalable, maintainable, and efficient web applications.
+Welcome to **ChatterOrbit**, a cutting-edge social networking platform where connectivity and real-time interactions take center stage. 
 
 ![Landing Page](https://github.com/SamuelFanawopo/ChatterOrbit/assets/92785438/4ed5192c-9fb0-4cb9-9c41-6a80377a182d)
 
